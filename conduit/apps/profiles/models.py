@@ -7,7 +7,7 @@ class Profile(TimestampedModel):
     # are formalizing this relationship. Every user will have one -- and only
     # one -- related Profile model.
 
-    user = models.OneToOneFeield(
+    user = models.OneToOneField(
         'authentication.User', on_delete=models.CASCADE
     )
 
